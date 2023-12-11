@@ -1,0 +1,9 @@
+Ola Jovem
+
+para conseguir vc tera que acessar o site, abrindo a pagina HTML vc ira ispecionar
+fazendo isso voce ira achar a aba console, la vc ira copiar o codigo a baixo e colar
+
+
+		       document.querySelector('.tecla_pom').onclick = function() {
+				document.querySelector('.tecla_pom').onclick = tocaSomPom;
+	 		}                                       

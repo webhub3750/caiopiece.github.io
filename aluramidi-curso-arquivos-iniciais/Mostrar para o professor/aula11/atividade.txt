@@ -1,0 +1,13 @@
+Ola Jovem
+
+para conseguir vc tera que acessar o site, abrindo a pagina HTML vc ira ispecionar
+fazendo isso voce ira achar a aba console, la vc ira copiar o codigo a baixo e colar
+		========================================================================
+
+					while(contador < listaDeTeclas.length) {
+		listaDeTeclas[contador].onclick = tocaSomPom;
+		contador = contador + 1;
+		}
+
+		Se der erro e normal, o script tem defeitos(professor n sabe ensinar entao tive q fazer minha gambiarras)
+    

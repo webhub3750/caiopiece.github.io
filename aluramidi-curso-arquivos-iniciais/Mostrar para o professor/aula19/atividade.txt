@@ -1,0 +1,16 @@
+Ola Jovem
+
+para conseguir vc tera que acessar o site, abrindo a pagina HTML vc ira ispecionar
+fazendo isso voce ira achar a aba console, la vc ira copiar o codigo a baixo e colar
+		========================================================================
+
+				function tocaSom(idElementoAudio)
+		const elemento = document.querySelector(idElementoAudio);
+		if (elemento === null) {
+		alert(‘Elemento não encontrado’);
+		}
+		}
+
+
+		Se der erro e normal, o script tem defeitos(professor n sabe ensinar entao tive q fazer minha gambiarras)
+    

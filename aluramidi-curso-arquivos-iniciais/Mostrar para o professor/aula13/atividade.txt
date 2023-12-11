@@ -1,0 +1,18 @@
+Ola Jovem
+
+para conseguir vc tera que acessar o site, abrindo a pagina HTML vc ira ispecionar
+fazendo isso voce ira achar a aba console, la vc ira copiar o codigo a baixo e colar
+		========================================================================
+
+			listaDeTeclas[contador].onclick = tocaSom(‘#som_tecla_toim’);
+	
+		=========================================================================
+
+				listaDeTeclas[contador].onclick = function () {
+
+		tocaSom(‘#som_tecla_splash’);
+		};
+
+
+		Se der erro e normal, o script tem defeitos(professor n sabe ensinar entao tive q fazer minha gambiarras)
+    

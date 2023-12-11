@@ -1,0 +1,19 @@
+Ola Jovem
+
+para conseguir vc tera que acessar o site, abrindo a pagina HTML vc ira ispecionar
+fazendo isso voce ira achar a aba console, la vc ira copiar o codigo a baixo e colar
+		========================================================================
+
+				document.querySelectorAll('.tecla');
+
+					Depois
+		========================================================================
+
+				while(contador <9) {
+		listaDeTeclas[0].onclick = tocaSomPom;
+		contador = contador + 1;
+		console.log(contador);
+		}
+
+		Se der erro e normal, o script tem defeitos(professor n sabe ensinar entao tive q fazer minha gambiarras)
+    

@@ -1,0 +1,113 @@
+
+1-document.querySelector('.tecla_pom');
+
+==========================================================
+
+2-document.querySelector('#som_tecla_pom').play();
+
+==========================================================
+
+
+3-function tocaSomPom(){
+document.querySelector('#som_tecla_pom').play();
+}
+
+==========================================================
+
+4-document.querySelector('.tecla_pom');
+
+==========================================================
+
+5-document.querySelector('.tecla_pom').onclick ;
+
+==========================================================
+
+6-document.querySelector('.tecla_pom').onclick = tocaSomPom;
+
+==========================================================
+
+7-function tocaSomPom(){
+document.querySelector('#som_tecla_pom').play();
+}
+document.querySelector('.tecla_pom').onclick = tocaSomPom;
+
+==========================================================
+
+8-unction tocaSomClap(){
+document.querySelector('#som_tecla_clap').play();
+}
+document.querySelector('.tecla_clap').onclick = tocaSomClap;
+
+==========================================================
+
+9-function tocaSomTim(){
+document.querySelector('#som_tecla_tim').play();
+}
+document.querySelector('.tecla_tim').onclick = tocaSomTim;
+
+==========================================================
+
+10-function tocaSomPuff(){
+document.querySelector('#som_tecla_puff').play();
+}
+document.querySelector('.tecla_puff').onclick = tocaSomPuff;
+
+==========================================================
+
+11-function tocaSomSplash(){
+document.querySelector('#som_tecla_splash').play();
+}
+document.querySelector('.tecla_splash').onclick = tocaSomSplash;
+
+==========================================================
+
+12-function tocaSomToim(){
+document.querySelector('#som_tecla_toim').play();
+}
+document.querySelector('.tecla_toim').onclick = tocaSomsToim;
+
+==========================================================
+
+13-function tocaSomPsh(){
+document.querySelector('#som_tecla_psh').play();
+}
+document.querySelector('.tecla_psh').onclick = tocaSomsPsh;
+
+==========================================================
+
+14-function tocaSomTic(){
+document.querySelector('#som_tecla_tic').play();
+}
+document.querySelector('.tecla_tic').onclick = tocaSomsTic;
+
+==========================================================
+
+15-function tocaSomTom(){
+document.querySelector('#som_tecla_tom').play();
+}
+document.querySelector('.tecla_tom').onclick = tocaSomsTom;
+
+==========================================================
+
+16-document.querySelectorAll('.tecla');
+
+==========================================================
+
+17-function tocaSomPom(){
+document.querySelector('#som_tecla_pom').play();
+}
+document.querySelectorAll('.tecla');
+
+==========================================================
+
+18-const listaDeTeclas = document.querySelectorAll('.tecla');
+
+==========================================================
+
+19-function tocaSomPom(){
+document.querySelector('#som_tecla_pom').play();
+}
+
+========================================================
+
+20-listaDeTeclas[0].onclick = tocaSomPom;
