@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #options-container {
+            margin-top: 20px;
+        }
+
+        .option {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Quiz Caio</h1>
+    <p>Qual dessas comidas o Caio ama mais?</p>
+    <div id="options-container">
+        <a href="index1.html"><div class="option" onclick="checkAnswer('wrong')">Paçoca</div></a>
+        <a href="index1.html"><div class="option" onclick="checkAnswer('wrong')">Bolo</div></a>
+        <a href="index2.html"><div class="option" onclick="checkAnswer('correct')">Pão de Queijo</div></a>
+    </div>
+</div>
+
+<script>
+    function checkAnswer(answer) {
+        if (answer === 'correct') {
+            alert('Resposta correta! Parabéns!');
+            // Redirecionar para a próxima pergunta ou finalizar o quiz
+            // window.location.href = 'proxima_pergunta.html';
+        } else {
+            alert('Resposta incorreta. Tente novamente!');
+            // Pode adicionar lógica para tentar novamente ou redirecionar para a página de erro
+            // window.location.href = 'pagina_de_erro.html';
+        }
+    }
+</script>
+
+</body>
+</html>
