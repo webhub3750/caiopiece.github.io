@@ -1,50 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
 
-    <title>Alura MIDI</title>
+        #quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+        h1 {
+            color: #333;
+        }
 
-    <link rel="icon" type="image/png" href="images/bateria.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilos.css">
+        #options-container {
+            margin-top: 20px;
+        }
 
+        .option {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>David Rodrigues 2A</h1>
+<div id="quiz-container">
+    <h1>Quiz Caio</h1>
+    <p>Qual dessas comidas o Caio ama mais?</p>
+    <div id="options-container">
+        <a href="index1.html"><div class="option" onclick="checkAnswer('wrong')">Paçoca</div></a>
+        <a href="index1.html"><div class="option" onclick="checkAnswer('wrong')">Bolo</div></a>
+        <a href="index2.html"><div class="option" onclick="checkAnswer('correct')">Pão de Queijo</div></a>
+    </div>
+</div>
 
-    <section class="teclado">
-        <button class="tecla tecla_pom">Pom</button>
-        <button class="tecla tecla_clap">Clap</button>
-        <button class="tecla tecla_tim">Tim</button>
-
-        <button class="tecla tecla_puff">Puff</button>
-        <button class="tecla tecla_splash">Splash</button>
-        <button class="tecla tecla_toim">Toim</button>
-
-        <button class="tecla tecla_psh">Psh</button>
-        <button class="tecla tecla_tic">Tic</button>
-        <button class="tecla tecla_tom">Tom</button>
-    </section>
-
-    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
-    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
-    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
-    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
-    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
-    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
-    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
-    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
-    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
-
-    <script src="main.js"></script>
+<script>
+    function checkAnswer(answer) {
+        if (answer === 'correct') {
+            alert('Resposta correta! Parabéns!');
+            // Redirecionar para a próxima pergunta ou finalizar o quiz
+            // window.location.href = 'proxima_pergunta.html';
+        } else {
+            alert('Resposta incorreta. Tente novamente!');
+            // Pode adicionar lógica para tentar novamente ou redirecionar para a página de erro
+            // window.location.href = 'pagina_de_erro.html';
+        }
+    }
+</script>
 
 </body>
 </html>
